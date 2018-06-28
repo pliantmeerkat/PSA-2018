@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Main Class/ GUI file, Runs all main program functions
  */
 package psa.pkg2018;
 
@@ -27,17 +25,29 @@ public class PSAUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenuBarmain = new javax.swing.JMenuBar();
+        MainMenuFile = new javax.swing.JMenu();
+        MainMenuEdit = new javax.swing.JMenu();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        MainMenuFile.setText("File");
+        jMenuBarmain.add(MainMenuFile);
+
+        MainMenuEdit.setText("Edit");
+        jMenuBarmain.add(MainMenuEdit);
+
+        setJMenuBar(jMenuBarmain);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 810, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 467, Short.MAX_VALUE)
         );
 
         pack();
@@ -73,11 +83,14 @@ public class PSAUI extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new PSAUI().setVisible(true);
+                new PSAUI().setVisible(true);   
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu MainMenuEdit;
+    private javax.swing.JMenu MainMenuFile;
+    private javax.swing.JMenuBar jMenuBarmain;
     // End of variables declaration//GEN-END:variables
 }
