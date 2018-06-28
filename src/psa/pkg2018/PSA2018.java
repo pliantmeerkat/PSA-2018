@@ -7,7 +7,7 @@ package psa.pkg2018;
 
 /**
  *
- * @author jackt
+ * @author Jack Branch
  */
 public class PSA2018 {
 
