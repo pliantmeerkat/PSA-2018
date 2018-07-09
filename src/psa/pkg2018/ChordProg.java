@@ -11,11 +11,11 @@ package psa.pkg2018;
 public class ChordProg {
     
     //instance vars
-    public String [] Chords; //array of chords - may include pointers to chords
+    public  Chord [] Chords; //array of chords - may include pointers to chords
     public int Length; // total length of progression
     public int Quantize; // represents the step - ie 1/8, 1/4, 1/2, 1, bars 
     
-    public ChordProg(String [] chords, int length, int quant)
+    public ChordProg (Chord [] chords, int length, int quant)
     {
         Chords = chords;
         Length = length;

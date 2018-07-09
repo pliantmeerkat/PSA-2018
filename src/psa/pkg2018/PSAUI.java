@@ -124,7 +124,22 @@ public class PSAUI extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
+                
+                // testing code to be removed..
+                
+                Chord C = new Chord ("D", "m", "7"); // A minor 7
+                
+                Harmony H = new Harmony(C);
+                int x;
+                String y;
+                x = (Integer) H.Key_Dict(C.Tonic);
+                y = (String) H.Key_Dict(4);
+                System.out.println(x);
+                System.out.println(y);
+                
+                
                 new PSAUI().setVisible(true);   
+                
             }
         });
     }
