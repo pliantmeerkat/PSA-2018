@@ -28,4 +28,10 @@ public class Chord {
         Tonality = Tone;
         Modifier = Mod;
     }
+    
+    // access instance variable methods    
+    public String GetTonic() { return Tonic; }
+    public String GetTone() { return Tonality; }
+    public String GetMod() { return Modifier; }
+            
 }
